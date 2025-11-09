@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rise Up Academy — Math Coaching (Class 6–12)</title>
+<style>
+  :root{
+    --bg:#f3f6fb;
+    --card:#ffffff;
+    --muted:#6b7280;
+    --brand-1:#0ea5e9;
+    --brand-2:#7c3aed;
+    --accent:#f97316;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,Arial, sans-serif;background:linear-gradient(180deg,#f7fbff,#ffffff);color:#0b1220}
+  header{background:linear-gradient(90deg,var(--brand-1),var(--brand-2));padding:18px;color:white;text-align:center;font-weight:700}
+  .wrap{max-width:1100px;margin:18px auto;padding:18px}
+  /* Poster */
+  .poster{
+    height:420px;border-radius:var(--radius);
+    background-size:cover;background-position:center;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow: 0 20px 40px rgba(12,20,40,0.06);
+    position:relative;overflow:hidden;
+  }
+  .poster .overlay{
+    background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.25));
+    color:white;padding:18px;border-radius:10px;
+    max-width:88%;text-align:center;font-size:20px;font-weight:600;
+    backdrop-filter: blur(4px);
+  }
+  /* Grid */
+  .grid{display:grid;grid-template-columns:1fr 380px;gap:18px;margin-top:20px}
+  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 12px 30px rgba(12,20,40,0.05)}
+  .big{padding:20px}
+  /* download */
+  .download-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+  .dl-card{background:linear-gradient(180deg,#fff,#fbfbff);padding:14px;border-radius:10px;display:flex;flex-direction:column;gap:8px}
+  .dl-card h4{margin:0;color:var(--accent)}
+  .btn{background:linear-gradient(90deg,var(--brand-1),var(--brand-2));color:white;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block}
+  .ghost{background:transparent;border:1px solid #eef5ff;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--muted)}
+  /* form */
+  form input, form select, form textarea {width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb;margin-top:8px;font-size:15px}
+  button.submit{background:var(--accent);color:white;border:0;padding:12px;border-radius:10px;font-weight:700;margin-top:12px;cursor:pointer;width:100%}
+  footer{text-align:center;padding:16px;color:var(--muted);margin-top:18px}
+  @media (max-width:980px){.grid{grid-template-columns:1fr}.poster{height:300px}}
+</style>
+</head>
+<body>
+<header>Rise Up Academy — Math Coaching (Class 6–12)</header>
+
+<div class="wrap">
+  <!-- Poster -->
+  <div id="poster" class="poster">
+    <div id="overlay" class="overlay">Loading motivational thought...</div>
+  </div>
+
+  <div class="grid">
+    <!-- LEFT: Downloads + Info -->
+    <div>
+      <div class="card big">
+        <h2 style="margin:0">Downloads — PSEB & CBSE Syllabus (Class 6 → 12)</h2>
+        <p style="color:var(--muted);margin-top:8px">Click the board card / link below to open official syllabus pages or sample PDFs. If you want me to fetch and host specific subject PDFs for each class, I can prepare those and give you upload files.</p>
+
+        <div class="download-grid">
+          <div class="dl-card">
+            <h4>PSEB (Punjab School Education Board)</h4>
+            <p style="margin:0;color:var(--muted)">Official PSEB syllabus index. Open to see class & subject PDFs.</p>
+            <a class="btn" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">Open PSEB Syllabus Page</a>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+              <!-- Example sample links (official pages) -->
+              <a class="ghost" href="https://www.pseb.ac.in/sites/default/files/syllabus%2022-23/6th%20and%207th%20English%20Syllabus.pdf" target="_blank" rel="noopener">PSEB — English (6/7 sample)</a>
+              <a class="ghost" href="https://www.pseb.ac.in/sites/default/files/syllabus%2022-23/Scheme%20of%20study%20%206th%20%26%207th%20class.pdf" target="_blank" rel="noopener">PSEB — Scheme (6–7)</a>
+            </div>
+          </div>
+
+          <div class="dl-card">
+            <h4>CBSE (Central Board of Secondary Education)</h4>
+            <p style="margin:0;color:var(--muted)">CBSE curriculum & syllabus pages for middle/secondary/ senior secondary levels.</p>
+            <a class="btn" href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener">Open CBSE Curriculum Page</a>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+              <a class="ghost" href="https://cbseacademic.nic.in/web_material/Curriculum21/middleLevel-CourseOutline.pdf" target="_blank" rel="noopener">CBSE — Middle Modules (PDF)</a>
+              <a class="ghost" href="https://cbseacademic.nic.in/web_material/CurriculumMain26/SrSec/Curriculum_SrSec_2025-26.pdf" target="_blank" rel="noopener">CBSE — Sr Sec Curriculum (PDF)</a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin:14px 0;border:none;border-top:1px solid #eef6ff" />
+
+        <p style="margin:0 0 8px 0">Quick class links (these open the board syllabus index — click and select exact class/subject):</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <a class="ghost" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">PSEB — Class 6</a>
+          <a class="ghost" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">PSEB — Class 7</a>
+          <a class="ghost" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">PSEB — Class 8</a>
+          <a class="ghost" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">PSEB — Class 9</a>
+          <a class="ghost" href="https://www.pseb.ac.in/syllabus?catid=9" target="_blank" rel="noopener">PSEB — Class 10</a>
+          <a class="ghost" href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener">CBSE — 6–8</a>
+          <a class="ghost" href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener">CBSE — 9–10</a>
+          <a class="ghost" href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener">CBSE — 11–12</a>
+        </div>
+
+        <p style="color:var(--muted);font-size:13px;margin-top:12px">Note: links open official board pages or PDFs. If you want me to prepare all subject PDFs (Math & Science etc.) downloaded and bundled so students download directly from this site, I can prepare the files for upload.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Register -->
+    <aside>
+      <div class="card">
+        <h3 style="margin:0 0 8px 0">Register (Quick)</h3>
+        <form id="regForm">
+          <input id="stuName" placeholder="Student full name" required />
+          <select id="stuClass" required>
+            <option value="">Select class</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+          </select>
+          <input id="stuPhone" placeholder="Parent / Phone (10 digits)" required />
+          <textarea id="stuMsg" rows="3" placeholder="Any note (optional)"></textarea>
+          <button class="submit" type="submit">Register & Open WhatsApp</button>
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:14px">
+          <strong>Coach:</strong><br/>Muskan Rani — Math Coach<br/>Dashmesh Nagar, Jalalabad West<br/>📞 <a href="https://wa.me/919877237883" target="_blank" rel="noopener">98772-37883</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>© Rise Up Academy — Made in Jalalabad</footer>
+</div>
+
+<script>
+/* -----------------------------
+   Robust non-repeating picker
+   -----------------------------
+   - uses arrays embedded below (images & thoughts)
+   - creates a shuffled index list stored in localStorage
+   - shows next unused item; when all used, reshuffles
+*/
+
+// ---------- CONFIG ----------
+const WHATSAPP_NUMBER = '919877237883'; // confirmed number (country code)
+const IMAGE_KEY = 'ru_images_v3';
+const IMAGE_ORDER_KEY = 'ru_images_order_v3';
+const THOUGHT_KEY = 'ru_thoughts_v3';
+const THOUGHT_ORDER_KEY = 'ru_thoughts_order_v3';
+
+// ---------- LISTS (sample HD images & many thoughts) ----------
+// images: picsum photos ids (fast & license-safe). Add/remove ids as needed.
+const images = [
+  "https://picsum.photos/id/1015/1400/900",
+  "https://picsum.photos/id/1025/1400/900",
+  "https://picsum.photos/id/1035/1400/900",
+  "https://picsum.photos/id/1043/1400/900",
+  "https://picsum.photos/id/1050/1400/900",
+  "https://picsum.photos/id/1057/1400/900",
+  "https://picsum.photos/id/1067/1400/900",
+  "https://picsum.photos/id/1074/1400/900",
+  "https://picsum.photos/id/1084/1400/900",
+  "https://picsum.photos/id/1080/1400/900",
+  "https://picsum.photos/id/1082/1400/900",
+  "https://picsum.photos/id/109/1400/900",
+  "https://picsum.photos/id/110/1400/900",
+  "https://picsum.photos/id/111/1400/900",
+  "https://picsum.photos/id/112/1400/900",
+  "https://picsum.photos/id/113/1400/900",
+  "https://picsum.photos/id/114/1400/900",
+  "https://picsum.photos/id/115/1400/900",
+  "https://picsum.photos/id/116/1400/900",
+  "https://picsum.photos/id/117/1400/900",
+  "https://picsum.photos/id/118/1400/900",
+  "https://picsum.photos/id/119/1400/900",
+  "https://picsum.photos/id/120/1400/900",
+  "https://picsum.photos/id/121/1400/900",
+  "https://picsum.photos/id/122/1400/900",
+  "https://picsum.photos/id/123/1400/900",
+  "https://picsum.photos/id/124/1400/900",
+  "https://picsum.photos/id/125/1400/900",
+  "https://picsum.photos/id/126/1400/900",
+  "https://picsum.photos/id/127/1400/900",
+  "https://picsum.photos/id/128/1400/900",
+  "https://picsum.photos/id/129/1400/900",
+  "https://picsum.photos/id/130/1400/900",
+  "https://picsum.photos/id/131/1400/900",
+  "https://picsum.photos/id/132/1400/900",
+  "https://picsum.photos/id/133/1400/900",
+  "https://picsum.photos/id/134/1400/900",
+  "https://picsum.photos/id/135/1400/900",
+  "https://picsum.photos/id/136/1400/900"
+];
+
+// thoughts: mixed English/Hindi/Punjabi short motivational lines
+const thoughts = [
+  "Believe in yourself — success starts with a single step.",
+  "मेहनत ही असली जादू है — लगातार प्रयास करो।",
+  "Never stop learning; life never stops teaching.",
+  "ਜਿਹੜਾ ਮੇਹਨਤ ਕਰਦਾ ਉਹ ਕਦੇ ਨਹੀਂ ਹਾਰਦਾ — ਸਿਖਦੇ ਰਹੋ।",
+  "Small daily progress leads to big results.",
+  "Push harder today so tomorrow is easier.",
+  "Confidence grows when you practice more.",
+  "हर गलती एक सबक है — सीखो और आगे बढ़ो।",
+  "Consistency beats intensity — keep going.",
+  "Stay curious; curiosity creates opportunity.",
+  "Every expert was once a beginner — start now.",
+  "सपने बड़े रखो, मेहनत से पूरा करो।",
+  "Turn problems into puzzles; solve them methodically.",
+  "Knowledge builds power; read a little every day.",
+  "ਪਕੜੋ ਮੌਕੇ ਅਤੇ ਮਹਨਤ ਨਾਲ ਅੱਗੇ ਵਧੋ।",
+  "Discipline is choosing between what you want now and what you want most.",
+  "Practice smart, not just long hours.",
+  "Small habits create massive change over time.",
+  "Seek understanding, not just answers.",
+  "हर दिन थोड़ा बेहतर बनो — यही जीत है।",
+  "Work quietly, let your success shout.",
+  "A clear mind solves clearer problems.",
+  "Stay patient — growth takes time.",
+  "Celebrate small wins; they compound into success.",
+  "Failures are steps forward if you learn.",
+  "Focus on progress, not perfection.",
+  "Choose effort; talent without effort fades.",
+  "सविधा नहीं, अभ्यास से लक्ष्य मिलता है।",
+  "Keep your goal visible and act daily.",
+  "The difference between try and triumph is a little umph.",
+  "Believe — plan — practice — perform.",
+  "Never compare your start to someone else's middle.",
+  "आज करो, कल पर मत टालो।",
+  "Practice builds speed and understanding.",
+  "Make mistakes, learn quickly, move on.",
+  "Curiosity + practice = mastery.",
+  "Set small goals; stack them every day.",
+  "Learn the concept, then solve many problems.",
+  "Find one weak topic and fix it this week.",
+  "Consistency is the secret ingredient to success.",
+  "Start with basics — strong foundation matters.",
+  "Solve with reasoning, not only memorization.",
+  "Ask more questions — clarity follows.",
+  "Practice old exam papers — learn pattern.",
+  "Time management wins during tests.",
+  "Read solution steps carefully — understand each line.",
+  "Relax, breathe, solve step-by-step.",
+  "Study with focus, not just time.",
+  "Be brave to attempt difficult questions.",
+  "Teach someone — you’ll understand better.",
+  "Revision is the bridge to memory.",
+  "A small daily habit beats occasional heroics."
+];
+
+// ---------- Utilities ----------
+function readJSON(key, fallback){
+  try{ const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; }catch(e){ return fallback; }
+}
+function writeJSON(key, val){ localStorage.setItem(key, JSON.stringify(val)); }
+
+// Fisher-Yates shuffle
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+  return a;
+}
+
+function ensureOrder(key, length){
+  let order = readJSON(key, null);
+  if(!order || !Array.isArray(order) || order.length !== length){
+    order = Array.from({length}, (_,i)=>i);
+    order = shuffle(order);
+    writeJSON(key, order);
+  }
+  return order;
+}
+
+function pickNext(keyOrder, keyIndex){
+  // keyOrder: storage key for order array
+  // keyIndex: storage key for pointer
+  const order = ensureOrder(keyOrder, arguments[2] || 0); // we will call with length via closure
+  let ptr = parseInt(localStorage.getItem(keyIndex) || '0', 10);
+  if(isNaN(ptr) || ptr >= order.length) ptr = 0;
+  const idx = order[ptr];
+  ptr++;
+  localStorage.setItem(keyIndex, ptr.toString());
+  return idx;
+}
+
+// ---------- Render poster & thought ----------
+(function renderPosterAndThought(){
+  // ensure orders
+  ensureOrder(IMAGE_ORDER_KEY, images.length);
+  ensureOrder(THOUGHT_ORDER_KEY, thoughts.length);
+
+  // pointer management
+  let imgPtr = parseInt(localStorage.getItem(IMAGE_ORDER_KEY + '_ptr') || '0', 10);
+  if(isNaN(imgPtr) || imgPtr >= images.length) imgPtr = 0;
+  const imgOrder = readJSON(IMAGE_ORDER_KEY);
+  const imgIdx = imgOrder[imgPtr];
+  imgPtr++;
+  localStorage.setItem(IMAGE_ORDER_KEY + '_ptr', imgPtr.toString());
+
+  let thPtr = parseInt(localStorage.getItem(THOUGHT_ORDER_KEY + '_ptr') || '0', 10);
+  if(isNaN(thPtr) || thPtr >= thoughts.length) thPtr = 0;
+  const thOrder = readJSON(THOUGHT_ORDER_KEY);
+  const thIdx = thOrder[thPtr];
+  thPtr++;
+  localStorage.setItem(THOUGHT_ORDER_KEY + '_ptr', thPtr.toString());
+
+  // show
+  const posterEl = document.getElementById('poster');
+  const overlay = document.getElementById('overlay');
+  posterEl.style.backgroundImage = 'url(' + images[imgIdx] + ')';
+  overlay.textContent = thoughts[thIdx];
+})();
+
+// ---------- Registration form: open WhatsApp with prefilled message ----------
+document.getElementById('regForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('stuName').value.trim();
+  const cls = document.getElementById('stuClass').value.trim();
+  const phone = document.getElementById('stuPhone').value.trim();
+  const msg = document.getElementById('stuMsg').value.trim();
+  if(!name || !cls || !phone){ alert('Please fill Name, Class, and Phone'); return; }
+  const text = `Hello Muskan Ma'am.%0ARegistration:%0AName:%20${encodeURIComponent(name)}%0AClass:%20${encodeURIComponent(cls)}%0APhone:%20${encodeURIComponent(phone)}%0AMessage:%20${encodeURIComponent(msg)}`;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+  window.open(url, '_blank');
+  alert('Registration ready on WhatsApp (new tab opened).');
+  this.reset();
+});
+
+</script>
+</body>
+</html>
